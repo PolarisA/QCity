@@ -2,7 +2,7 @@
   "name": "QCity",
   "version": "1.0.0",
   "private": true,
-  "description": "wechat project for Qcity_24_H",
+  "description": "weChat project for QCity_24_H",
   "scripts": {
     "build:weapp": "taro build --type weapp",
     "build:swan": "taro build --type swan",
@@ -29,7 +29,10 @@
     "@tarojs/taro-tt": "1.2.19",
     "@tarojs/taro-weapp": "1.2.19",
     "nervjs": "^1.3.9",
-    "nerv-devtools": "^1.3.9"
+    "nerv-devtools": "^1.3.9",
+    "redux": "^4.0.1",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0"
   },
   "devDependencies": {
     "@types/react": "^16.4.6",
@@ -43,12 +46,6 @@
     "babel-plugin-transform-decorators-legacy": "^1.3.4",
     "babel-plugin-transform-jsx-stylesheet": "^0.6.5",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-preset-env": "^1.6.1",
-    "babel-eslint": "^8.2.3",
-    "eslint": "^4.19.1",
-    "eslint-config-taro": "1.2.19",
-    "eslint-plugin-react": "^7.8.2",
-    "eslint-plugin-import": "^2.12.0",
-    "eslint-plugin-taro": "1.2.19"
+    "babel-preset-env": "^1.6.1"
   }
 }
