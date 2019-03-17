@@ -1,7 +1,11 @@
-import Taro, { Component } from '@tarojs/taro'
+import Taro, {Component} from '@tarojs/taro'
+import {Provider} from '@tarojs/redux'
+import configStore from './store'
 import Index from './pages/index'
 
 import './app.scss'
+
+const store = configStore()
 
 // 如果需要在 h5 环境中开启 React Devtools
 // 取消以下注释：
@@ -10,7 +14,6 @@ import './app.scss'
 // }
 
 class App extends Component {
-
   config = {
     pages: [
       'pages/index/index'
@@ -23,21 +26,15 @@ class App extends Component {
     }
   }
 
-  componentDidMount () {}
-
-  componentDidShow () {}
-
-  componentDidHide () {}
-
-  componentDidCatchError () {}
-
   // 在 App 类中的 render() 函数没有实际作用
   // 请勿修改此函数
-  render () {
+  render() {
     return (
-      <Index />
+      <Provider store={store}>
+        <Index/>
+      </Provider>
     )
   }
 }
 
-Taro.render(<App />, document.getElementById('app'))
+Taro.render(<App/>, document.getElementById('app'))
