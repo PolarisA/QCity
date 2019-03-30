@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEA;6BAC6B;AAM7B;6BAC6B;AAK7B,YAAY;AAEZ;6BAC6B;AAM7B;6BAC6B;AAI7B;6BAC6B;AC5B7B,UAAW;ED4DT,KAAK,EC3DO,IAAI;ED4DhB,MAAM,EC5DY,IAAI",
+"sources": ["../../styles/mixin.scss","index.scss"],
+"names": [],
+"file": "index.css"
+}

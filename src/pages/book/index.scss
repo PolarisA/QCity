@@ -1,0 +1,5 @@
+@import "../../styles/mixin";
+
+.book-page {
+  @include wh(100%, 100%);
+}
